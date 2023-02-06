@@ -26,6 +26,11 @@
     font-size:large;
   }
 
+
+  #nav-links {
+    display: none;
+  }
+
 body {
 
     font-family: Gideon Roman, Verdana, Geneva, Tahoma, sans-serif;
