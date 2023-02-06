@@ -91,7 +91,7 @@ nav a:hover {
     height: auto;
 }
 
-caviat{
+caveat{
     font-size: x-small;
 }
 #hamburger-menu-button {
@@ -106,7 +106,10 @@ caviat{
     }
 
     h1{
-        font-size: 2em;
+        font-size: 1.6em;
+    }
+    caveat{
+        font-size: xx-small;
     }
     iframe{
         width:100%;
