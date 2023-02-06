@@ -112,8 +112,7 @@ caveat{
         font-size: xx-small;
     }
     iframe{
-        width:100%;
-        height: auto;
+        width:75%;
         /* height:250px; */
     }
     #abstainCharm{ height:120px
