@@ -1,0 +1,87 @@
+/*   
+  *{
+    border-radius: 1px;
+    border: thin solid red;
+    border-color: red;
+  } */
+
+
+
+
+
+
+body {
+
+    font-family: Gideon Roman, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+body {
+    font-family: 'Martian Mono', serif;
+    font-size: 24px;
+}
+
+nav {
+    background-color: lightgray;
+    display: flex;
+
+    padding: 0.5em;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav li {
+    margin: 0 1em;
+    padding: 8px;
+    margin-right: -5px;
+}
+
+nav a {
+
+    color: black;
+    text-decoration: none;
+ 
+}
+
+
+nav a:hover {
+    color: white;
+}
+
+
+
+
+#abstainBanner {
+    padding: 0.0em;
+
+}
+
+#logo {
+    width: 60%;
+    margin: auto;
+    height: auto;
+}
+
+caviat{
+    font-size: x-small;
+}
+
+
+
+@media (max-width: 800px) {
+    body {
+        font-size: 14px;
+    }
+    iframe{
+        width:450px;
+        height:250px;
+    }
+}
