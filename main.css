@@ -8,7 +8,23 @@
 
 
 
+  #nav-links {
+    display: none;
+    width: auto 20% 20% auto;
+    background-color: lightgray;
+    
+  }
 
+  #nav-links li{
+    margin:15px;
+    
+    /* border-bottom: 1px solid gray; */
+    padding:10px;
+  }
+
+  #nav-links li a{
+    font-size:large;
+  }
 
 body {
 
@@ -29,7 +45,7 @@ nav {
 
 }
 
-nav ul {
+ ul {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -41,10 +57,10 @@ nav ul {
 nav li {
     margin: 0 1em;
     padding: 8px;
-    margin-right: -5px;
+ 
 }
 
-nav a {
+a {
 
     color: black;
     text-decoration: none;
@@ -73,15 +89,56 @@ nav a:hover {
 caviat{
     font-size: x-small;
 }
+#hamburger-menu-button {
+    display: none;
+}
 
 
 
 @media (max-width: 800px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
     iframe{
-        width:450px;
-        height:250px;
+        width:100%;
+        height: auto;
+        /* height:250px; */
     }
+    #abstainCharm{ height:120px
+     }
+
+     #logo {
+        width: 50%;
+        margin: auto;
+        height: auto;
+    }
+
+    /* Hide the nav links by default */
+
+  
+  /* Style the hamburger button */
+  #hamburger-menu-button {
+    display:block;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display:none;
+  }
+  
+
+
+
+}
+
+
+
+@media (min-width: 801px) {
+
+    #nav-links{
+        display: none;
+    }
+
 }
