@@ -73,6 +73,7 @@ a {
 }
 
 
+
 nav a:hover {
     color: white;
 }
@@ -100,13 +101,52 @@ caveat{
 
 
 
+#slideshow {
+
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#slideshow img {
+  position: absolute;
+  
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#slideshow img.active {
+  opacity: 1;
+}
+
+#prev, #next {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+
+
+
 @media (max-width: 800px) {
     body {
         font-size: 12px;
     }
 
     h1{
-        font-size: 1.6em;
+        font-size: 1.3em;
     }
     caveat{
         font-size: xx-small;
@@ -119,7 +159,8 @@ caveat{
      }
 
      #logo {
-        width: 50%;
+        padding-top:43.25px;
+        width: 100%;
         margin: auto;
         height: auto;
     }
@@ -152,4 +193,14 @@ caveat{
         display: none;
     }
 
+
+nav li {
+  padding-bottom: 25px;
 }
+
+#logo {
+  align-items: center;
+  padding-top: 37px;
+}
+}
+

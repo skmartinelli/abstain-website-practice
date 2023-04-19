@@ -21,3 +21,38 @@ window.addEventListener("resize", function() {
     navLinks.style.display = "none";
   });
   
+
+
+
+// slideshow 
+
+var slideshow = document.getElementById("slideshow");
+var images = slideshow.getElementsByTagName("img");
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+var current = 0;
+
+function showImage() {
+  for (var i = 0; i < images.length; i++) {
+    images[i].classList.remove("active");
+  }
+  images[current].classList.add("active");
+}
+
+prev.addEventListener("click", function() {
+  current--;
+  if (current < 0) {
+    current = images.length - 1;
+  }
+  showImage();
+});
+
+next.addEventListener("click", function() {
+  current++;
+  if (current >= images.length) {
+    current = 0;
+  }
+  showImage();
+});
+
+showImage();
